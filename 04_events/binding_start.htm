@@ -6,7 +6,12 @@
     <script type="text/javascript" src="../jquery-1.9.1.js"></script>
     <script type="text/javascript">
         $(function() {
+            $("#evtTarget").on("mouseover mouseleave",highlight);
         });
+
+         function gighlight(evt) {
+            $("#evtTarget").toggleClass("highlighted");
+         }
     </script>
     <style type='text/css'>
     .normal {

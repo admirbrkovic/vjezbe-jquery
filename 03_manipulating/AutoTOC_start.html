@@ -8,6 +8,10 @@
             buildBookmarks('h3', 'header');
         });
         function buildBookmarks(strWhichTag, sBookMarkNode) {
+            var cAnchorCount = 0;
+            var oList = $("<ul id='bookmarksList'>");
+            $("div:not([id=header])" + strWhichTag).each(
+                function() $(this).html("<a name='bookmark" + cAnchorCount + "'></a>"+$(this).html()))
         }
     </script>
 </head>
