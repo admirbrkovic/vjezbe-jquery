@@ -9,10 +9,12 @@
                 $("#theDiv").fadeIn("normal");
             });
             $("#fadeout").click(function() {
-                $("#theDiv").fadeOut("normal");
+                $("#theDiv").fadeOut(4000, function () {
+                    alert("done fading put");
+                });
             });
             $("#fadeto3").click(function() {
-                $("#theDiv").fadeTo("slow", 0.3);
+                $("#theDiv").fadeTo("slow", 3.3);
             });
             $("#fadeup").click(function() {
                 $("#theDiv").fadeTo("slow", 1.0);

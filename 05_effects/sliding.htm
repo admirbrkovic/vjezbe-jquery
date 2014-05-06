@@ -6,7 +6,9 @@
     <script type="text/javascript">
         $(function() {
             $("#slideup").click(function() {
-                $("#theDiv").slideUp("normal");
+                $("#theDiv").slideUp(3000, function() {
+                    alert("slide complete")
+                });
             });
             $("#slidedown").click(function() {
                 $("#theDiv").slideDown("normal");

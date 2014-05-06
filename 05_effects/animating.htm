@@ -14,6 +14,9 @@
             $("#toggle").click(function() {
                 $("#theDiv").animate({ left: "500" }, 1000, "swing");
             });
+             $("#multiple").click(function() {
+                $("#theDiv").animate({width: "500px", fontSize: "24pt", left: "500" }, 1000, "linear");
+            });
         });
     </script>
     <style type="text/css">
@@ -42,5 +45,6 @@
     <button id="right">Grow Right</button>
     <button id="text">Big Text</button>
     <button id="toggle">Move Div</button>
+    <button id="multiple">Everything</button>
 </body>
 </html>
