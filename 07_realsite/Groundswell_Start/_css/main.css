@@ -161,6 +161,18 @@ body  {
 	margin-bottom: 1em;
 }
 
+#mainContent h4 span.subhead {
+	margin-left: 40px;
+}
+#newsSection {
+	margin-left: 20px;
+}
+#newsSection h4, #newsSection p {
+	margin-bottom: 0;
+	margin-left: 0;
+
+}
+
 #mainContent h3 {
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 1em;
@@ -673,6 +685,23 @@ table#boardCompare thead th.name {
 #sidebar ol li {
 	margin-bottom: 0.6em;
 	margin-left: 20px;
+}
+
+#photoShow {
+	position: relative;
+	height: 190px;
+	width: 240px;
+	margin-left: auto;
+}
+#photoShow div {
+	position: absolute;
+	z-index: 0;
+}
+#photoShow div.previous {
+	z-index: 1;
+}
+#photoShow div.current {
+	z-index: 2;
 }
 
 .tooltipContent {

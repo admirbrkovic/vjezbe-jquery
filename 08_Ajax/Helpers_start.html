@@ -15,11 +15,13 @@
       });
       
       function getData() {
+        //$.get("testdata.txt", successFn);
+        $("#content").load("testdata.txt"); 
       }
 
       function successFn(result) {
         console.log("Setting result");
-      	$("#content").append(result);
+      	//$("#content").append(result);
       }
       function errorFn(xhr, status, strErr) {
         alert(strErr);

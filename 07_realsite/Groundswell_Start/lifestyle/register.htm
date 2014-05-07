@@ -4,6 +4,22 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Join Groundswell!</title>
 <link href="../_css/main.css" rel="stylesheet" type="text/css" media="screen, projection" />
+<link href="../_css/sunny/jquery-ui-1.7.2.custom.css" rel="stylesheet" type="text/css"
+        media="screen, projection" />
+<script type="text/javascript" src="_scripts/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="_scripts/jquery-ui-1.10.2.custom.js"></script>
+<script type="text/javascript">
+      $(function ()  {
+        var maxw = $("#commentsSection").width();
+        var minw = maxw;
+        var minh = $("#commentsSection").height(); 
+        $("#commentsSection").resizable({
+          maxWidth: maxw,
+          minHeight: minh,
+          minWidth: minw });
+      });
+</script>
+
 </head>
 
 <body>
